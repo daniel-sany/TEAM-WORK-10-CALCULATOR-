@@ -1,4 +1,6 @@
 import math
+
+# This is the function used to display the menu options.
 def display_menu():
     print("Choose an operation:")
     print("1. Addition")
@@ -8,3 +10,71 @@ def display_menu():
     print("5. Second Power")
     print("6. Square Root")
     print("7. Exit")
+
+# This is the function to perform addition
+def add(x, y):
+    return x + y
+
+# This is the function to perform subtraction
+def subtract(x, y):
+    return x - y
+
+# This is the function to perform multiplication
+def multiply(x, y):
+    return x * y
+
+# This is the function to perform division
+def divide(x, y):
+    return x / y
+
+# This is the function to calculate second power
+def second_power(x):
+    return x ** 2
+
+# This is the function to calculate square root
+def square_root(x):
+    return math.sqrt(x)
+
+# This is the function to display the menu
+display_menu()
+
+# This is the loop to keep prompting the user for input
+while True:
+    # Get user input for the desired operation
+    choice = input("Enter choice (1/2/3/4/5/6/7): ")
+
+    # Check if user wants to exit (Exiting option)
+    if choice == '7':
+        break
+
+    # Get input numbers for the chosen operation (values for the operation)
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+
+    # These are the functions to perform the chosen operation and display the result
+    if choice == '1':
+        print(num1, "+", num2, "=", add(num1, num2))
+
+    elif choice == '2':
+        print(num1, "-", num2, "=", subtract(num1, num2))
+
+    elif choice == '3':
+        print(num1, "*", num2, "=", multiply(num1, num2))
+
+    elif choice == '4':
+        print(num1, "/", num2, "=", divide(num1, num2))
+
+    elif choice == '5':
+        print(num1, "^2", "=", second_power(num1))
+
+    elif choice == '6':
+        print("sqrt(", num1, ")=", square_root(num1))
+
+    else:
+        print("Invalid input")
+    
+    # Function to display the menu again
+    display_menu()
+
+print("Exiting calculator...")
+
