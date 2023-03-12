@@ -1,0 +1,3 @@
+The program starts by displaying a welcome message and a menu of available operations. The program then asks the user to input their choice of operation, and based on the user's input, it performs the corresponding mathematical operation. The program continues to loop through the menu and perform operations until the user chooses to exit by selecting option 7.
+
+This program implements basic math operations such as addition, subtraction, multiplication, division, second power, and square root, as well as input validation to ensure that the user inputs valid data. Additionally, the program provides error messages if the user attempts to perform invalid operations, such as dividing by zero or finding the square root of a negative number.
